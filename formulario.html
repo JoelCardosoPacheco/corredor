@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Inscrição</title>
+</head>
+<body class="container">
+    <header>
+        <img src="" alt="">
+    </header>
+    <main>
+        <h2>Inscrição</h2>
+        <section>
+            <form id="form-adiciona">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" required class="padrao">
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" class="padrao">
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" name="dataNascimento"  class="padrao">
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" class="padrao" >
+            
+                    <label for="cep">CEP:</label>
+                    <input type="number" name="cep"class="padrao">
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone"  class="padrao" placeholder="ex. (DD) 9 9999-9999">
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" class="padrao">
+                </div>
+                    <input type="button" value="Inserir" class="botao" id="inserir" class="padrao">
+
+                <fieldset class="fieldset">
+                    <p>Distância</p>
+            
+                    <input type="radio" name="distancia" id="idis5" value="5km" checked>
+                    <label for="radio-5km">5km</label>
+            
+                    <input type="radio" name="distancia" id="idis10" value="10km">
+                    <label for="radio-10km">10km</label>
+            
+                    <input type="radio" name="distancia" id="idis20" value="20km">
+                    <label for="radio-20km">20km</label>
+                </fieldset>
+                <hr>
+            </form>
+        </section>
+        
+        <h2>Inscritos</h2>
+        <section>
+            <table>
+                <label for="filtro">Consulta:</label>
+                <input type="text" name="filtro" id="filtro"> &#128270;
+                <thead >
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Idade</th>
+                        <th>Telefone</th>
+                        <th>Distância</th>
+                    </tr>
+                </thead >
+                <tbody id="tabela">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Agradecemos </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
